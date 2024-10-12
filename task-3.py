@@ -110,7 +110,7 @@ def determine_fastest(results):
     return fastest_algo, fastest_time
 
 # Завантаження текстів
-with open("text-1.txt", "r", encoding="windows-1251") as f:
+with open("text-1.txt", "r", encoding="windows-1251") as f: # Кодування першого файлу має бути саме таким
     text1 = f.read()
 
 with open("text-2.txt", "r", encoding="utf-8") as f:
@@ -119,7 +119,7 @@ with open("text-2.txt", "r", encoding="utf-8") as f:
 # Підрядки для пошуку: реальні фрагменти з тексту
 existing_substring_text1 = text1[80:100]  # Вибір існуючого підрядка з тексту 1
 existing_substring_text2 = text2[100:120]  # Вибір існуючого підрядка з тексту 2
-non_existing_substring = "nonexistent_substring"  # Підрядок, що не існує в жодному тексті
+non_existing_substring = "nonexistent_substring" # Підрядок, що не існує в жодному тексті
 
 # Вимірювання часу виконання для першого тексту
 print(f"Текст 1: Підрядок існує ('{existing_substring_text1}')")
